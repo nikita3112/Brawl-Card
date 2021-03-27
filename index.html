@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Тест Brawl Stars</title>
+</head>
+<body>
+    <div class="main">
+        <div class="main__image"></div>
+
+        <div class="main__form">
+            <h1>Узнай, кто ты из<br>Brawl Stars</h1>
+            <form action="">
+                <p>Номер карты</p>
+                <input class="main__form__card-number" type="text" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                <div class="main__form__card-date-cvv">
+                    <div class="main__form__card-date">
+                        <p>Срок действия</p>
+                        <div class="main__form__card-date-input">
+                            <input class="main__form__card-month date" type="text" placeholder="ММ" required>
+                            /
+                            <input class="main__form__card-year date" type="text" placeholder="ГГ" required>
+                        </div>
+                    </div>
+                    <div>
+                        <p>VVC2/CVV2</p>
+                        <input class="main__form__card-cvv" type="text" required>
+                    </div>
+                </div>
+                <p>Имя держателя</p>
+                <input class="main__form__card-name" type="text" placeholder="NAME SURNAME" required>
+                <button id="btn" type="button">Узнать результат</button>
+            </form>
+        </div>
+        <div class="loader">
+            <div id="floatingCirclesG">
+                <div class="f_circleG" id="frotateG_01"></div>
+                <div class="f_circleG" id="frotateG_02"></div>
+                <div class="f_circleG" id="frotateG_03"></div>
+                <div class="f_circleG" id="frotateG_04"></div>
+                <div class="f_circleG" id="frotateG_05"></div>
+                <div class="f_circleG" id="frotateG_06"></div>
+                <div class="f_circleG" id="frotateG_07"></div>
+                <div class="f_circleG" id="frotateG_08"></div>
+            </div>
+        </div>
+        <div class="popup">
+            <p>Поздравляем вы виталя!</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

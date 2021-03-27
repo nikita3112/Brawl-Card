@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../images/bg.jpg") no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main {
+  background-color: #000000;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main__image {
+  background: url("../images/hero.jpg") no-repeat;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  margin-right: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__form {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+input {
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid #939393;
+  border-radius: 7px;
+  height: 30px;
+  padding-left: 5px;
+  color: #ffffff;
+  outline: none;
+  transition: border 0.2s;
+}
+input:focus {
+  border: 2px solid #ffffff;
+}
+
+.main__form__card-date-cvv {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.main__form__card-number {
+  width: 250px;
+  margin: 5px 0 5px 0;
+}
+
+.main__form__card-date {
+  margin-right: 50px;
+}
+
+.main__form__card-date-input {
+  margin-top: 5px;
+}
+
+.main__form__card-month, .main__form__card-year {
+  width: 45px;
+}
+
+.main__form__card-cvv {
+  width: 60px;
+  margin-top: 5px;
+}
+
+.main__form__card-name {
+  width: 250px;
+  margin-top: 5px;
+}
+
+button {
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid #939393;
+  color: #ffffff;
+  margin-top: 15px;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+  transition: border 0.2s;
+}
+button:hover {
+  border: 2px solid #ffffff;
+}
+
+.popup {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  font-size: 50px;
+  background: black;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  position: absolute;
+  display: none;
+  background: rgba(114, 112, 112, 0.6);
+  border-radius: 15px;
+}
+
+#floatingCirclesG {
+  position: relative;
+  width: 125px;
+  height: 125px;
+  margin: auto;
+  transform: scale(0.6);
+  -o-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+}
+
+.f_circleG {
+  position: absolute;
+  background-color: white;
+  height: 22px;
+  width: 22px;
+  border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  animation-name: f_fadeG;
+  -o-animation-name: f_fadeG;
+  -ms-animation-name: f_fadeG;
+  -webkit-animation-name: f_fadeG;
+  -moz-animation-name: f_fadeG;
+  animation-duration: 1.2s;
+  -o-animation-duration: 1.2s;
+  -ms-animation-duration: 1.2s;
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-direction: normal;
+  -o-animation-direction: normal;
+  -ms-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  -moz-animation-direction: normal;
+}
+
+#frotateG_01 {
+  left: 0;
+  top: 51px;
+  animation-delay: 0.45s;
+  -o-animation-delay: 0.45s;
+  -ms-animation-delay: 0.45s;
+  -webkit-animation-delay: 0.45s;
+  -moz-animation-delay: 0.45s;
+}
+
+#frotateG_02 {
+  left: 15px;
+  top: 15px;
+  animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  -ms-animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+}
+
+#frotateG_03 {
+  left: 51px;
+  top: 0;
+  animation-delay: 0.75s;
+  -o-animation-delay: 0.75s;
+  -ms-animation-delay: 0.75s;
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+}
+
+#frotateG_04 {
+  right: 15px;
+  top: 15px;
+  animation-delay: 0.9s;
+  -o-animation-delay: 0.9s;
+  -ms-animation-delay: 0.9s;
+  -webkit-animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+}
+
+#frotateG_05 {
+  right: 0;
+  top: 51px;
+  animation-delay: 1.05s;
+  -o-animation-delay: 1.05s;
+  -ms-animation-delay: 1.05s;
+  -webkit-animation-delay: 1.05s;
+  -moz-animation-delay: 1.05s;
+}
+
+#frotateG_06 {
+  right: 15px;
+  bottom: 15px;
+  animation-delay: 1.2s;
+  -o-animation-delay: 1.2s;
+  -ms-animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+}
+
+#frotateG_07 {
+  left: 51px;
+  bottom: 0;
+  animation-delay: 1.35s;
+  -o-animation-delay: 1.35s;
+  -ms-animation-delay: 1.35s;
+  -webkit-animation-delay: 1.35s;
+  -moz-animation-delay: 1.35s;
+}
+
+#frotateG_08 {
+  left: 15px;
+  bottom: 15px;
+  animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  -ms-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+}
+
+@keyframes f_fadeG {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@-o-keyframes f_fadeG {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@-ms-keyframes f_fadeG {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@-webkit-keyframes f_fadeG {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@-moz-keyframes f_fadeG {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column;
+  }
+}
